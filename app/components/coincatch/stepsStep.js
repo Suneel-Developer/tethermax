@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import React from 'react'
 
 
@@ -23,7 +24,7 @@ StepsStep = () => {
             <div className='w-[3px] h-[93px] rounded-[1.5px] bg-gray_100 mr-6'></div>
             <button className='flex justify-between items-center flex-auto'>
               <div className='flex items-center'>
-                <img src="/assets/coin-catch.png" alt="CoinCatch " className='w-[30px] h-[30px] rounded-full mr-[10px]' />
+                <Image src="/assets/coin-catch.png" alt="CoinCatch " className='rounded-full mr-[10px]' width={30} height={30} />
                 <p className='text-[19px] text-blue_700 f-pretendard-b text-left'>CoinCatch링크 (테더맥스 전용)</p>
               </div>
             </button>

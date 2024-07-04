@@ -1,4 +1,5 @@
 "use client"
+import Image from 'next/image';
 import { useRouter } from 'next/navigation';
 
 const partnerExchanges = [
@@ -150,13 +151,13 @@ const PartnerExchange = () => {
                         <tr key={index} className='cursor-pointer hover:bg-gray_50 tbody' onClick={() => handleRowClick(exchange.link)}>
                             <td className='text-left md:border-y border-gray_50 text-gray_900 f-pretendard-sm py-4 px-5 md:px-6'>
                                 <div className='flex items-center gap-4 mr-auto'>
-                                    <img src={exchange.logo} alt={exchange.name} className='w-10 h-10 rounded-full' />
+                                    <Image src={exchange.logo} alt={exchange.name} className='rounded-full' width={40} height={40} />
                                     <div className='flex flex-col gap-1'>
                                         <h4 className='text-gray_900 text-[17px] f-pretendard-b'>{exchange.name}</h4>
                                         {exchange.popular && (
                                             <div className='flex items-center gap-[2px] text-gray_400 text-[13px] leading-[16px] f-pretendard-sm'>
                                                 {exchange.popular}
-                                                <img src={exchange.popularlogo} alt="Popular icon" className='w-4 h-4' />
+                                                <Image src={exchange.popularlogo} alt="Popular icon" width={16} height={16}  />
                                             </div>
                                         )}
                                     </div>
@@ -179,7 +180,7 @@ const PartnerExchange = () => {
                                     <strong className='text-blue_700'>{exchange.discountRate}</strong>
                                     할인
                                 </div>
-                                <img src="/assets/right-arrow.svg" alt="right-arrow" />
+                                <Image src="/assets/right-arrow.svg" alt="right-arrow" width={14} height={14} />
                             </td>
                         </tr>
                     ))}

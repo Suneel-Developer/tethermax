@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react';
 
 const SignupLinkModal = ({ onClose }) => {
@@ -19,7 +20,7 @@ const SignupLinkModal = ({ onClose }) => {
                 <p className='text-gray_400 text-base f-pretendard-m'>테더맥스 추천인은 필수에요</p>
                 <button className='bg-blue_700 rounded-xl px-3 flex-1 mt-9 mb-4 py-3 text-lg f-pretendard-b text-center text-white'>BitMEX 전용 링크로 가입하기</button>
                 <button onClick={onClose} className='absolute top-6 right-6'>
-                    <img src="/assets/close-icon.svg" alt="close-icon" />
+                    <Image src="/assets/close-icon.svg" alt="close-icon" width={20} height={20} />
                 </button>
             </div>
         </div>

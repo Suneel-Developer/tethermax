@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import React from 'react'
 
 const Footer = ({ bgColor = 'bg-gray_50' }) => {
@@ -19,31 +20,31 @@ const Footer = ({ bgColor = 'bg-gray_50' }) => {
           <ul className='flex items-center gap-4'>
             <li>
               <a href="https://www.instagram.com/tethermax_official/" className='w-8 h-8 flex justify-center items-center bg-white rounded-full'>
-                <img src="/assets/instagram.svg" alt="instagram" className='w-6 h-6' />
+                <Image src="/assets/instagram.svg" alt="instagram" width={24} height={24}  />
               </a>
             </li>
 
             <li>
               <a href="https://tethermax.tistory.com/" className='w-8 h-8 flex justify-center items-center bg-white rounded-full'>
-                <img src="/assets/tistory.svg" alt="tistory" className='w-6 h-6' />
+                <Image src="/assets/tistory.svg" alt="tistory" width={24} height={24} />
               </a>
             </li>
 
             <li>
               <a href="https://www.youtube.com/@tethermax" className='w-8 h-8 flex justify-center items-center bg-white rounded-full'>
-                <img src="/assets/youtube.svg" alt="youtube" className='w-6 h-6' />
+                <Image src="/assets/youtube.svg" alt="youtube" width={24} height={24} />
               </a>
             </li>
 
             <li>
               <a href="https://twitter.com/tethermax" className='w-8 h-8 flex justify-center items-center bg-white rounded-full'>
-                <img src="/assets/x.svg" alt="x" className='w-6 h-6' />
+                <Image src="/assets/x.svg" alt="x" width={24} height={24} />
               </a>
             </li>
 
             <li>
               <a href="https://t.me/tethermax_official" className='w-8 h-8 flex justify-center items-center bg-white rounded-full'>
-                <img src="/assets/telegram.svg" alt="telegram" className='w-6 h-6' />
+                <Image src="/assets/telegram.svg" alt="telegram" width={24} height={24} />
               </a>
             </li>
           </ul>

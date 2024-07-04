@@ -1,4 +1,5 @@
 "use client"
+import Image from 'next/image';
 import React, { useEffect, useState } from 'react';
 
 const Hero = () => {
@@ -19,7 +20,7 @@ const Hero = () => {
     return (
         <section>
             <div className='bg-[#19181d] min-h-[200px] flex flex-col justify-center items-center w-full'>
-                <img src="/assets/bitmart-thumbnail.webp" alt="BitMart" className='w-[200px] h-[200px]' />
+                <Image src="/assets/bitmart-thumbnail.webp" alt="BitMart" width={200} height={200} />
             </div>
 
             <div className='pt-6 pb-12 px-6 bg-white'>
@@ -50,7 +51,7 @@ const Hero = () => {
                     <div className='relative'>
                         <button onClick={handleTooltipToggle} className='flex gap-1 items-center text-gray_900 text-2xl relative f-pretendard-b'>
                             수수료율
-                            <img src="/assets/questionmark.svg" alt="questionmark icon" />
+                            <Image src="/assets/questionmark.svg" alt="questionmark icon" width={24} height={24} />
 
                             {/* tooltip  */}
                             {tooltipVisible && (

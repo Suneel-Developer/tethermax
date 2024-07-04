@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React, { useRef, useEffect } from 'react';
 
 const ExchangeModal = ({ onClose, onSelectExchange }) => {
@@ -47,7 +48,7 @@ const ExchangeModal = ({ onClose, onSelectExchange }) => {
                                     onClick={() => onSelectExchange(exchange)}
                                     className='py-3 flex items-center w-full gap-4 text-gray_700 text-[17px] f-pretendard-m'
                                 >
-                                    <img src={exchange.imgSrc} alt={exchange.name} className='w-8 h-8 rounded-full' />
+                                    <Image src={exchange.imgSrc} alt={exchange.name} className='rounded-full' width={32} height={32} />
                                     <span>{exchange.name}</span>
                                 </button>
                             ))}

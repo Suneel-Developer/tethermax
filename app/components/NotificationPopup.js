@@ -1,16 +1,15 @@
 "use client"
-import React, { useEffect, useRef } from 'react';
-
+import React, { useEffect, useRef, useCallback } from 'react';
 
 const NotificationPopup = ({ isOpen, onClose }) => {
     const popupRef = useRef(null);
 
     // Handle click outside popup to close it
-    const handleClickOutside = (event) => {
+    const handleClickOutside = useCallback((event) => {
         if (popupRef.current && !popupRef.current.contains(event.target)) {
             onClose();
         }
-    };
+    }, [onClose]);
 
     useEffect(() => {
         if (isOpen) {
@@ -23,7 +22,8 @@ const NotificationPopup = ({ isOpen, onClose }) => {
         return () => {
             document.removeEventListener('mousedown', handleClickOutside);
         };
-    }, [isOpen, onClose]);
+    }, [isOpen, handleClickOutside]);
+
     return (
         <div className={`absolute top-10 lg:top-[40px] -right-14 md:right-20 mx-auto ${isOpen ? '' : 'hidden'}`}>
             <div ref={popupRef} className='border border-gray_100 bg-white min-w-[310px] md:min-w-[345px] relative w-fit rounded-2xl pt-6 px-4 pb-4'>
@@ -41,4 +41,4 @@ const NotificationPopup = ({ isOpen, onClose }) => {
     )
 }
 
-export default NotificationPopup
+export default NotificationPopup;

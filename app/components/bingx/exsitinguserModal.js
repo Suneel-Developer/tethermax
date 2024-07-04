@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react';
 
 const ExistingUserModal = ({ onClose }) => {
@@ -21,23 +22,23 @@ const ExistingUserModal = ({ onClose }) => {
                         <p className='text-gray_400 text-[13px] f-pretendard-sm text-left'>평균 소요시간 250초</p>
                         <p className='text-gray_900 text-[15px] f-pretendard-b text-left'>동영상 보면서 따라하기</p>
                         <div className='flex justify-end mt-1'>
-                            <img src="/assets/youtube-icon.svg" alt="/youtube-icon" className='w-8 h-8' />
+                            <Image src="/assets/youtube-icon.svg" alt="/youtube-icon" width={32} height={32} />
                         </div>
                     </button>
                     <button className='bg-gray_55 rounded-xl py-3 px-4 flex-1'>
                         <p className='text-gray_400 text-[13px] f-pretendard-sm text-left'>평균 소요시간 100초</p>
                         <p className='text-gray_900 text-[15px] f-pretendard-b text-left'>글 보면서 따라하기</p>
                         <div className='flex justify-end mt-1'>
-                            <img src="/assets/blog.webp" alt="blog-icon" className='w-8 h-8' />
+                            <Image src="/assets/blog.webp" alt="blog-icon" width={32} height={32} />
                         </div>
                     </button>
                 </div>
                 <div className='pt-5 pb-2 flex items-center gap-1'>
-                    <img src="/assets/headphone.svg" alt="headphone" />
+                    <Image src="/assets/headphone.svg" alt="headphone" width={18} height={18} />
                     <span className='text-gray_400 text-[15px] f-pretendard-m'>고객센터</span>
                 </div>
                 <button onClick={onClose} className='absolute top-6 right-6'>
-                    <img src="/assets/close-icon.svg" alt="close-icon" />
+                    <Image src="/assets/close-icon.svg" alt="close-icon" width={20} height={20} />
                 </button>
             </div>
         </div>

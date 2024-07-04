@@ -2,6 +2,7 @@
 import { useRouter } from 'next/navigation';
 import Header from '../components/Header';
 import Topbar from '../components/Topbar';
+import Image from 'next/image';
 
 const Benefit6 = () => {
     const router = useRouter();
@@ -25,22 +26,22 @@ const Benefit6 = () => {
 
                         <div className='flex flex-col gap-2 my-8'>
                             <div className='flex items-center justify-center gap-2'>
-                                <img src="/assets/celebrate.svg" alt="celebrate" />
+                                <Image src="/assets/celebrate.svg" alt="celebrate" width={24} height={24} />
                                 <h4 className='text-gray_900 text-[15px] f-pretendard-b text-center'>떠먹여주는 혜택!</h4>
                             </div>
                             <div className='flex items-center justify-center gap-2'>
-                                <img src="/assets/dollar.svg" alt="dollar" className='w-6 h-6' />
+                                <Image src="/assets/dollar.svg" alt="dollar" width={24} height={24} />
                                 <h4 className='text-gray_900 text-[15px] f-pretendard-b text-center'>첫 페이백 출금 이후 받는 <strong className="text-blue_700">15 USDT</strong> 쿠폰</h4>
                             </div>
 
                         </div>
-                        <img src="/assets/Payback.gif" alt="Payback" className='h-[240px] w-[240px] mx-auto' />
+                        <Image src="/assets/Payback.gif" alt="Payback" className='h-[240px] w-[240px] mx-auto' width={24} height={24} />
                     </div>
                 </div>
 
                 <div className='bg-gray_50'>
                     <div className='pt-8 pb-14 px-6 max-w-[840px] mx-auto w-full flex justify-center flex-col items-center'>
-                        <img src="/assets/dollar.svg" alt="dollar" />
+                        <Image src="/assets/dollar.svg" alt="dollar" width={40} height={40} />
                         <h4 className='text-gray_900 text-2xl text-center f-pretendard-b leading-[34px] mt-3'>첫 페이백 받고 또 받는 <br /><strong className="text-blue_700">15 USDT</strong> 쿠폰!</h4>
                         <h3 className='text-gray_400 mt-2 text-[17px] text-center f-pretendard-sm leading-[26px]'>출금이 가능한 USDT 쿠폰이에요</h3>
 

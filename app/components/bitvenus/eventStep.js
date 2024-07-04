@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import React, { useState, useEffect } from 'react';
 
@@ -44,12 +45,12 @@ const EventStep = () => {
 
       <div className='mt-8 flex gap-4 px-5 overflow-x-auto no-scrollbar pb-14'>
         <div className='w-[155px] min-w-[155px] max-w-[155px]'>
-          <img src="/assets/bitvennus-cometition.webp" alt="BitVenus" className='rounded-2xl w-[155px] h-[155px]' loading='lazy' />
+          <Image src="/assets/bitvennus-cometition.webp" alt="BitVenus" className='rounded-2xl' width={155} height={155} loading='lazy' />
           <div className='mt-1 flex flex-col gap-1'>
             <p className='text-gray_500 text-[13px] leading-[20px] f-pretendard-m'>딥코인 신규회원 이벤트</p>
             <p className='text-gray_900 text-[17px] leading-[26px] f-pretendard-b'>입금하고 최대 1,000 USDT 받아가세요!</p>
             <div className='flex items-center gap-2'>
-              <img src="/assets/timer.svg" alt="timer" className='w-5 h-5' />
+              <Image src="/assets/timer.svg" alt="timer" width={20} height={20} />
               <span className='text-gray_700 text-[13px] f-pretendard-m'>{formatTime(timeLeft)}</span>
             </div>
           </div>
@@ -62,24 +63,24 @@ const EventStep = () => {
       <div className='mt-8 flex gap-4 px-5 overflow-x-auto no-scrollbar pb-14'>
 
         <div className='w-[155px] min-w-[155px] max-w-[155px]'>
-          <img src="/assets/_bitvenus-competition.webp" alt="BitVenus" className='rounded-2xl w-[155px] h-[155px]' loading='lazy' />
+          <Image src="/assets/_bitvenus-competition.webp" alt="BitVenus" className='rounded-2xl' width={155} height={155} loading='lazy' />
           <div className='mt-1 flex flex-col gap-1'>
             <p className='text-gray_500 text-[13px] leading-[20px] f-pretendard-m'>딥코인 신규회원 이벤트</p>
             <p className='text-gray_900 text-[17px] leading-[26px] f-pretendard-b'>입금하고 최대 1,000 USDT 받아가세요!</p>
             <div className='flex items-center gap-2'>
-              <img src="/assets/calender.svg" alt="timer" className='w-5 h-5' />
+              <Image src="/assets/calender.svg" alt="calender" width={20} height={20} />
               <span className='text-gray_700 text-[13px] f-pretendard-m'>24.05.01 ~ 24.05.31</span>
             </div>
           </div>
         </div>
 
         <div className='w-[155px] min-w-[155px] max-w-[155px]'>
-          <img src="/assets/bitvennus-cometition.webp" alt="BitVenus" className='rounded-2xl w-[155px] h-[155px]' loading='lazy' />
+          <Image src="/assets/bitvennus-cometition.webp" alt="BitVenus" className='rounded-2xl' width={155} height={155} loading='lazy' />
           <div className='mt-1 flex flex-col gap-1'>
             <p className='text-gray_500 text-[13px] leading-[20px] f-pretendard-m'>딥코인 신규회원 이벤트</p>
             <p className='text-gray_900 text-[17px] leading-[26px] f-pretendard-b'>입금하고 최대 1,000 USDT 받아가세요!</p>
             <div className='flex items-center gap-2'>
-              <img src="/assets/calender.svg" alt="timer" className='w-5 h-5' />
+              <img src="/assets/calender.svg" alt="calendar" width={20} height={20} />
               <span className='text-gray_700 text-[13px] f-pretendard-m'>24.04.15 ~ 24.05.15</span>
             </div>
           </div>
@@ -105,14 +106,14 @@ const EventStep = () => {
 
       <div className='p-6 bg-white flex items-center justify-between cursor-pointer'>
         <div className='flex items-center gap-4'>
-          <img src="/assets/caller.svg" alt="caller" className='w-10 h-10' />
+          <Image src="/assets/caller.svg" alt="caller" width={40} height={40} />
           <div>
             <p className='text-gray_400 text-sm f-pretendard-sm'>궁금한 것이 있나요?</p>
             <p className='text-gray_700 text-[17px] f-pretendard-b'>24시간 상담원에게 질문하기</p>
           </div>
         </div>
 
-        <img src="/assets/right-arrow.svg" alt="right-arrow" />
+        <Image src="/assets/right-arrow.svg" alt="right-arrow" width={16} height={16} />
       </div>
 
       <div className='bg-gray_55 pt-8 pb-[150px] px-5'>
@@ -121,7 +122,7 @@ const EventStep = () => {
           BitVenus와 테더맥스는 공식 독점 제휴 관계입니다.<br />
           카피트레이딩의 경우 동일하게 페이백을 받을 수 있지만, API 거래에서는 페이백을 받을 수 없습니다.<br />
           페이백은 매일 11시(UTC) 에 트레이더님의 테더맥스 계정으로 지급됩니다.<br />
-          '나의 페이백 랭킹'이벤트는 BitVenus의 경우 24년 04월 01일부터 최초 진행됩니다.<br />
+          나의 페이백 랭킹 이벤트는 BitVenus의 경우 24년 04월 01일부터 최초 진행됩니다.<br />
           누적된 페이백의 보장 기간은 안전한 정보보호를 위해 최대 탈퇴할 때까지 보관됩니다. 거래소에서 지급하는 증정금 및 보너스는 유효한 리워드으로 잡히지 않으며, 증점금 및 보너스를 사용하기 전까지는 페이백이 이뤄지지 않습니다.<br />
           거래소별로 마감 인원이 정해져 있어 마감 이후에는 해당 거래소의 페이백 서비스 이용이 어려울 수 있습니다.<br />
           당사 혹은 거래소의 사정으로 페이백 조건은 변경될 수 있습니다.<br />

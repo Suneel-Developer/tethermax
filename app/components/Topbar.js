@@ -3,6 +3,7 @@
 import React from 'react'
 import { useRouter } from 'next/navigation'
 import LanguageConvertor from './LanguageConvertor'
+import Image from 'next/image'
 
 const Topbar = () => {
     const router = useRouter()
@@ -16,7 +17,7 @@ const Topbar = () => {
             <div className='max-w-[840px] w-full mx-auto relative'>
                 <div className='h-[52px] lg:h-[62px] flex flex-auto items-center px-5 justify-between'>
                     <button type='button' onClick={handleBack}>
-                        <img src="/assets/_left-arrow.svg" alt="tethermax_logo" />
+                        <Image src="/assets/_left-arrow.svg" alt="left-arrow" width={24} height={24} />
                     </button>
                 </div>
             </div>

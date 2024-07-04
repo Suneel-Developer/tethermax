@@ -1,4 +1,5 @@
 "use client"
+import Image from 'next/image';
 import React, { useEffect, useState } from 'react';
 
 const Hero = () => {
@@ -19,7 +20,7 @@ const Hero = () => {
     return (
         <section>
             <div className='bg-[#0c192b] min-h-[200px] flex flex-col justify-center items-center w-full'>
-                <img src="/assets/htx-thumbnail.webp" alt="htx" className='w-[200px] h-[200px]' />
+                <Image src="/assets/htx-thumbnail.webp" alt="htx" width={200} height={200} />
             </div>
 
             <div className='pt-6 pb-12 px-6 bg-white'>
@@ -50,7 +51,7 @@ const Hero = () => {
                     <div className='relative'>
                         <button onClick={handleTooltipToggle} className='flex gap-1 items-center text-gray_900 text-2xl relative f-pretendard-b'>
                             수수료율
-                            <img src="/assets/questionmark.svg" alt="questionmark icon" />
+                            <Image src="/assets/questionmark.svg" alt="questionmark icon" width={20} height={20} />
 
                             {/* tooltip  */}
                             {tooltipVisible && (
@@ -69,10 +70,7 @@ const Hero = () => {
                         <p className='mr-2 text-gray_300 text-lg f-pretendard-m line-through'>0.06%</p>
                         <p className='mr-2 text-blue_700 text-[22px] f-pretendard-b'>0.012%</p>
                     </div>
-
                 </div>
-
-
             </div>
 
         </section>

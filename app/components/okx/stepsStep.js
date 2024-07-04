@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import React from 'react'
 
 
@@ -23,7 +24,7 @@ StepsStep = () => {
             <div className='w-[3px] h-[93px] rounded-[1.5px] bg-gray_100 mr-6'></div>
             <button className='flex justify-between items-center flex-auto'>
               <div className='flex items-center'>
-                <img src="/assets/okx.webp" alt="OKX " className='w-[30px] h-[30px] rounded-full mr-[10px]' />
+                <Image src="/assets/okx.webp" alt="OKX " className='rounded-full mr-[10px]' width={30} height={30} />
                 <p className='text-[19px] text-blue_700 f-pretendard-b text-left'>OKX링크 (테더맥스 전용)</p>
               </div>
             </button>
@@ -39,7 +40,6 @@ StepsStep = () => {
           </div>
           <div className='mr-6 ml-[33px] mt-2 flex'>
             <div className='w-[3px] h-[39px] rounded-[1.5px] bg-gray_100 mr-6'></div>
-
           </div>
         </div>
 
@@ -52,7 +52,6 @@ StepsStep = () => {
           </div>
           <div className='mr-6 ml-[33px] mt-2 flex'>
             <div className='w-[3px] h-[39px] rounded-[1.5px] bg-gray_100 mr-6'></div>
-
           </div>
         </div>
 

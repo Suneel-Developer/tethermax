@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import ExchangeModal from './exchangeModal';
+import Image from 'next/image';
 
 const SearchSection = () => {
     const router = useRouter();
@@ -66,10 +67,10 @@ const SearchSection = () => {
                 <div className='py-[11px] md:py-[14px] pl-[18px] md:pl-[28px] pr-3 md:pr-[21px] rounded-[37.5px] border border-blue_700 bg-white flex items-center f-pretendard-b gap-1 md:gap-2' style={{ boxShadow: "0 4px 6px 0 rgba(67,142,185,.1)" }}>
                     <div onClick={handleOpenModal} className='flex items-center gap-1 md:gap-2 cursor-pointer'>
                         <div className='flex items-center gap-4'>
-                            <img src={selectedExchange.imgSrc} alt={selectedExchange.name} className='w-8 h-8 rounded-full' />
+                            <Image src={selectedExchange.imgSrc} alt={selectedExchange.name} className='rounded-full' width={32} height={32} />
                             <span className='text-gray_700 text-xl f-pretendard-b hidden md:block'>{selectedExchange.name}</span>
                         </div>
-                        <img src="/assets/down-arrow.png" alt="down-arrow" />
+                        <Image src="/assets/down-arrow.png" alt="down-arrow" width={16} height={16} />
                     </div>
 
                     {isModalOpen && <ExchangeModal onClose={handleCloseModal} onSelectExchange={handleSelectExchange} />}
@@ -77,7 +78,7 @@ const SearchSection = () => {
                     <form className='flex items-center flex-auto'>
                         <input placeholder='거래소 UID를 입력해주세요' className='border-none outline-none bg-transparent h-[30px] text-gray_900 w-full overflow-hidden text-ellipsis whitespace-nowrap text-xl f-pretendard-b' />
                         <button className='flex items-center' type='button'>
-                            <img src="/assets/search-icon.png" alt="search-icon" className='w-8 h-8' />
+                            <Image src="/assets/search-icon.png" alt="search-icon" width={32} height={32} />
                         </button>
                     </form>
                 </div>
@@ -95,7 +96,7 @@ const SearchSection = () => {
             </div>
 
             <div className='mt-8 mx-5 md:mx-6 p-8 md:p-9 rounded-2xl bg-blue_50 flex flex-col items-center'>
-                <img src="/assets/calculatorHome.webp" alt="calculator" className='w-[72px] h-[72px]' />
+                <Image src="/assets/calculatorHome.webp" alt="calculator" width={72} height={72}/>
                 <div className='text-lg md:text-xl text-center text-gray_900 mt-3 f-pretendard-b leading-[150%]'>
                     1인 월평균 페이백
                     <strong className='text-blue_700'> 497,500원</strong> <br />
@@ -106,7 +107,7 @@ const SearchSection = () => {
             <button onClick={navigateToPayback} type='button' className='bg-blue_700 hover:bg-blue_900 mt-5 h-14 mx-5 py-3 px-4 rounded-xl f-pretendard-b text-center text-lg text-white flex md:hidden items-center justify-center' style={{ boxShadow: "0 0 12px 0 rgba(67,142,185,.1)" }}>내가 받을 돈 확인하기</button>
 
             <div onClick={navigateToDownload} className='mt-[26px] md:mt-4 mb-0 md:mb-4 mx-5 md:mx-6 py-[18px] px-5 rounded-[20px] bg-white border border-gray_50 flex items-center gap-6 cursor-pointer' style={{ boxShadow: "4px 4px 16px 0 rgba(58,66,85,.08)" }}>
-                <img src="/assets/logo.gif" alt="tethermax logo" className='w-10' />
+                <Image src="/assets/logo.gif" alt="tethermax logo" width={40} height={40} />
 
                 <div className='flex flex-col gap-1'>
                     <span className='text-sm md:text-[13px] text-gray_400 f-pretendard-sm'>더 간단하고 더 빨라졌어요</span>

@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import React from 'react'
 
 const StatisticsStep = () => {
@@ -50,13 +51,13 @@ const StatisticsStep = () => {
             <div className='flex flex-col mt-7 mb-8 px-5 gap-[30px]'>
               <div className='flex justify-between items-center w-full'>
                 <div className='flex items-center'>
-                  <img src="/assets/Devil.webp" alt="Devil" className='w-10 h-10 rounded-lg mr-4' />
+                  <Image src="/assets/Devil.webp" alt="Devil" className='rounded-lg mr-4' width={10} height={10} />
                   <div>
                     <p className='text-gray_400 text-[13px] f-pretendard-sm'>*****6249</p>
                     <p className='text-gray_900 text-[17px] f-pretendard-b'>79113 USDT</p>
                   </div>
                 </div>
-                <img src="/assets/medal1.svg" alt="medal1" />
+                <Image src="/assets/medal1.svg" alt="medal1" width={40} height={40} />
               </div>
 
             </div>

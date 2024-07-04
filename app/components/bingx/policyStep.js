@@ -1,4 +1,5 @@
 "use client"
+import Image from 'next/image';
 import React, { useState } from 'react'
 
 const PolicyStep = () => {
@@ -13,12 +14,12 @@ const PolicyStep = () => {
                 <div className='mx-5 f-pretendard-b text-gray_900 text-[22px] leading-[32px]'>BingX 페이백 정책</div>
 
                 <div className='px-6 flex gap-4 items-center w-full'>
-                    <img src="/assets/money-bag.svg" alt="money-bag" className='w-10 h-10' />
+                    <Image src="/assets/money-bag.svg" alt="money-bag" width={40} height={40} />
 
                     <div>
                         <button onClick={handleTooltipToggle} className='flex gap-1 items-center text-gray_400 text-[15px] relative f-pretendard-sm'>
                             수수료 혜택
-                            <img src="/assets/questionmark.svg" alt="questionmark icon" className='w-5 h-5' />
+                            <Image src="/assets/questionmark.svg" alt="questionmark icon" width={20} height={20} />
 
                             {/* tooltip  */}
                             {tooltipVisible && (
@@ -33,7 +34,7 @@ const PolicyStep = () => {
                 </div>
 
                 <div className='px-6 flex gap-4 items-center w-full'>
-                    <img src="/assets/StarMedal.svg" alt="StarMedal" className='w-10 h-10' />
+                    <Image src="/assets/StarMedal.svg" alt="StarMedal" width={40} height={40} />
 
                     <div>
                         <button className='flex gap-1 items-center cursor-none text-gray_400 text-[15px] relative f-pretendard-sm'>
@@ -54,7 +55,7 @@ const PolicyStep = () => {
                     <div className='flex flex-1 justify-center items-center py-3 relative text-center text-[17px] text-blue_700 f-pretendard-b break-keep mr-2 md:mr-[156px] border-t-[3px] border-blue_700 rounded-t-[20px] border-x-[3px]'>
                         테더맥스 페이백
 
-                        <img src="/assets/circletikmark.png" alt="circletikmark" className=' absolute left-[45%] -top-[38px] w-8 h-8' />
+                        <Image src="/assets/circletikmark.png" alt="circletikmark" className=' absolute left-[45%] -top-[38px]' width={32} height={32} />
                     </div>
                 </div>
 

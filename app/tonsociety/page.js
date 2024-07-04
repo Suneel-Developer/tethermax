@@ -62,7 +62,7 @@ const Tonsociety = () => {
                 <strong className="f-pretendard-b">※ SBT(Soul-Bound Token)</strong>이란?
               </h3>
               <h3 className='f-pretendard-m text-[15px] leading-[22px] text-gray_700 mt-4'>
-                소울바운드토큰(SBT)은 토큰이 소유자와 '영혼(Soul)'처럼 결속되어, 어떠한 상황에서도 양도가 불가능한 토큰이에요. <br />
+                소울바운드토큰(SBT)은 토큰이 소유자와 영혼(Soul) 처럼 결속되어, 어떠한 상황에서도 양도가 불가능한 토큰이에요. <br />
                 NFT와는 다르게 전송이나 거래가 불가능해서 고유의 인증서 같은 역할을 하고 있어요. <br />
                 TON에서도 SBT를 발행하고 있는데, <br />
                 이번 SBT 캠페인은 테더맥스 트레이더이자 TON Society의 일원이란 증표에요. <br />
@@ -105,8 +105,8 @@ const Tonsociety = () => {
                   <h4 className='text-gray_900 text-[15px] f-pretendard-sm leading-[22px]'>테더맥스에 온보딩된 거래소에서 <strong className="text-blue_700">TON 선물</strong> 거래해요 (15 USDT)</h4>
                 </div>
                 <h3 className='text-gray_500 text-[13px] f-pretendard-m leading-[20px]'>
-                  Bybit, Bitget, OKX 중 테더맥스 UID를 등록하고 'TON 코인'으로 선물 거래량 $50,000 이상 거래해 보세요! <br />
-                  Bybit, Bitget, OKX 중 테더맥스 UID를 등록하고 'TON 코인'으로 선물 거래량 $50,000 이상 거래해 보세요!
+                  Bybit, Bitget, OKX 중 테더맥스 UID를 등록하고 TON 코인 으로 선물 거래량 $50,000 이상 거래해 보세요! <br />
+                  Bybit, Bitget, OKX 중 테더맥스 UID를 등록하고 TON 코인 으로 선물 거래량 $50,000 이상 거래해 보세요!
                   <br />
                   *테더맥스에 등록된 UID를 입력해야해요
                 </h3>
@@ -202,37 +202,37 @@ const Tonsociety = () => {
                       <img src="/assets/wallet01.webp" alt="wallet01" className="h-[243px] w-auto" width={243} height={243} />
                     </div>
 
-                    <h4 className='text-gray_700 text-[15px] f-pretendard-m'>먼저 <strong className="text-blue_700">텔레그램</strong>을 설치해야해요. <br />텔레그램 상단의 ‘검색’ 아이콘을 클릭 후 ‘wallet’을 검색해주세요</h4>
+                    <h4 className='text-gray_700 text-[15px] f-pretendard-m'>먼저 <strong className="text-blue_700">텔레그램</strong>을 설치해야해요. <br />텔레그램 상단의 검색 아이콘을 클릭 후 ‘wallet’을 검색해주세요</h4>
 
                     <div className="bg-[#eaeef4] flex justify-center items-center rounded-xl">
                       <img src="/assets/wallet02.webp" alt="wallet02" className="h-[243px] w-auto" width={243} height={243} />
                     </div>
 
-                    <h4 className='text-gray_700 text-[15px] f-pretendard-m'>‘시작’ 버튼을 클릭하고 ‘월렛 열기’를 클릭해요</h4>
+                    <h4 className='text-gray_700 text-[15px] f-pretendard-m'>시작 버튼을 클릭하고 월렛 열기 를 클릭해요</h4>
 
                     <div className="bg-[#eaeef4] flex justify-center items-center rounded-xl">
                       <img src="/assets/wallet03.webp" alt="wallet03" className="h-[243px] w-auto" width={243} height={243} />
                     </div>
 
-                    <h4 className='text-gray_700 text-[15px] f-pretendard-m'>이용약관에 동의하고 ‘계속하기’를 클릭해요</h4>
+                    <h4 className='text-gray_700 text-[15px] f-pretendard-m'>이용약관에 동의하고 계속하기 를 클릭해요</h4>
 
                     <div className="bg-[#eaeef4] flex justify-center items-center rounded-xl">
                       <img src="/assets/wallet04.webp" alt="wallet04" className="h-[243px] w-auto" width={243} height={243} />
                     </div>
 
-                    <h4 className='text-gray_700 text-[15px] f-pretendard-m'>‘시작해요’ 버튼을 클릭해요</h4>
+                    <h4 className='text-gray_700 text-[15px] f-pretendard-m'>시작해요 버튼을 클릭해요</h4>
 
                     <div className="bg-[#eaeef4] flex justify-center items-center rounded-xl">
                       <img src="/assets/wallet05.webp" alt="wallet05" className="h-[243px] w-auto" width={243} height={243} />
                     </div>
 
-                    <h4 className='text-gray_700 text-[15px] f-pretendard-m'>‘자산 더보기’를 클릭 후 ‘Toncoin’을 선택해요</h4>
+                    <h4 className='text-gray_700 text-[15px] f-pretendard-m'>자산 더보기 를 클릭 후 Toncoin 을 선택해요</h4>
 
                     <div className="bg-[#eaeef4] flex justify-center items-center rounded-xl">
                       <img src="/assets/wallet06.webp" alt="wallet06" className="h-[243px] w-auto" width={243} height={243} />
                     </div>
 
-                    <h4 className='text-gray_700 text-[15px] f-pretendard-m'>‘수령’을 선택 후 ‘알겠습니다’를 클릭하면 지갑 주소를 확인할 수 있어요!</h4>
+                    <h4 className='text-gray_700 text-[15px] f-pretendard-m'>수령 을 선택 후 알겠습니다를 클릭하면 지갑 주소를 확인할 수 있어요!</h4>
 
 
 
@@ -285,7 +285,7 @@ const Tonsociety = () => {
 
                     <h4 className='text-gray_700 text-[15px] f-pretendard-m'>
                       PC로 TON Society 사이트에 방문하면, <br />
-                      오른쪽 상단에 ‘Connect wallet’ 이라는 버튼이 보일거에요. 버튼을 클릭하면 이미지와 같은 팝업창이 떠요
+                      오른쪽 상단에 Connect wallet 이라는 버튼이 보일거에요. 버튼을 클릭하면 이미지와 같은 팝업창이 떠요
                     </h4>
 
                     <div className="bg-[#eaeef4] flex justify-center items-center rounded-xl">
@@ -303,8 +303,8 @@ const Tonsociety = () => {
 
                     <h4 className='text-gray_700 text-[15px] f-pretendard-m'>
                       모바일로 TON Society에 방문했다면, <br />
-                      오른쪽 상단에 ‘Connect’버튼을 터치해주세요. <br />
-                      이후 나타는 모달에서 ‘Open Wallet in Telegram’을 터치하면, 연동 끝! <br />
+                      오른쪽 상단에 Connect 버튼을 터치해주세요. <br />
+                      이후 나타는 모달에서 Open Wallet in Telegram 을 터치하면, 연동 끝! <br />
                       단, Telegram 앱이 설치된 상태여야 합니다 <br />
                     </h4>
 
@@ -322,7 +322,7 @@ const Tonsociety = () => {
               <li>본 이벤트는 당사 또는 제휴사의 사정으로 예고 없이 조기 종료될 수 있습니다.</li>
               <li>비정상적인 방법으로 참여할 경우 리워드 지급에 제한이 있을 수 있습니다.</li>
               <li>선물 거래 보상의 경우 테더맥스 레퍼럴 코드로 가입 및 연동 완료된 하나의 계정으로만 참여 가능합니다.</li>
-              <li>Bybit, Bitget, OKX에서 선물 거래한 내역만 해당됩니다. ‘TONUSDT Perpetual’을 확인해주세요.</li>
+              <li>Bybit, Bitget, OKX에서 선물 거래한 내역만 해당됩니다. TONUSDT Perpetual 을 확인해주세요.</li>
               <li>TON 거래량에 따른 순위는 내부적으로 산출될 예정입니다.</li>
               <li>지정된 거래소가 아닌 경우 참여가 불가합니다.</li>
               <li>TON 지갑 주소만 이벤트 참여 대상입니다.</li>

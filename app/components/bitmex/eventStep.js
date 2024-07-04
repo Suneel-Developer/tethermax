@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import React, { useState, useEffect } from 'react';
 
@@ -44,19 +45,19 @@ const EventStep = () => {
 
       <div className='mt-8 flex gap-4 px-5 overflow-x-auto no-scrollbar pb-14'>
         <div className='w-[155px] min-w-[155px] max-w-[155px]'>
-          <img src="/assets/bitmex_.webp" alt="BitMEX" className='rounded-2xl w-[155px] h-[155px]' loading='lazy' />
+          <Image src="/assets/bitmex_.webp" alt="BitMEX" className='rounded-2xl' width={155} height={155} loading='lazy' />
           <div className='mt-1 flex flex-col gap-1'>
             <p className='text-gray_500 text-[13px] leading-[20px] f-pretendard-m'>딥코인 신규회원 이벤트</p>
             <p className='text-gray_900 text-[17px] leading-[26px] f-pretendard-b'>입금하고 최대 1,000 USDT 받아가세요!</p>
             <div className='flex items-center gap-2'>
-              <img src="/assets/timer.svg" alt="timer" className='w-5 h-5' />
+              <Image src="/assets/timer.svg" alt="timer" width={20} height={20} />
               <span className='text-gray_700 text-[13px] f-pretendard-m'>{formatTime(timeLeft)}</span>
             </div>
           </div>
         </div>
 
       </div>
-      \
+
 
       <div className='pb-6'>
         <p className='text-gray_900 text-[22px] f-pretendard-b px-5 leading-[32px]'>테더맥스 고객이 좋아하는 거래소</p>
@@ -76,14 +77,14 @@ const EventStep = () => {
 
       <div className='p-6 bg-white flex items-center justify-between cursor-pointer'>
         <div className='flex items-center gap-4'>
-          <img src="/assets/caller.svg" alt="caller" className='w-10 h-10' />
+          <Image src="/assets/caller.svg" alt="caller" width={40} height={40} />
           <div>
             <p className='text-gray_400 text-sm f-pretendard-sm'>궁금한 것이 있나요?</p>
             <p className='text-gray_700 text-[17px] f-pretendard-b'>24시간 상담원에게 질문하기</p>
           </div>
         </div>
 
-        <img src="/assets/right-arrow.svg" alt="right-arrow" />
+        <Image src="/assets/right-arrow.svg" alt="right-arrow" width={16} height={16} />
       </div>
 
       <div className='bg-gray_55 pt-8 pb-[150px] px-5'>
@@ -94,7 +95,7 @@ const EventStep = () => {
           비트맥스는 지정가 수수료를 자체 페이백 해주는 시스템을 가지고 있습니다. 시장가와 지정가를 모두 사용해서 거래한다면 트레이더님이 지불하는 수수료 중 지<br />
           정가에서 페이백해주는 금액만큼 제외 후 테더맥스에서 페이백합니다. 지정가만으로 거래한다면 페이백이 발생하지 않습니다.<br />
           BitMEX의 페이백은 매일 11시(UTC) 에 트레이더님의 테더맥스 계정으로 지급됩니다.<br />
-          '나의 페이백 랭킹'이벤트는 BitMEX의 경우 24년 05월 01일부터 최초 진행됩니다.<br />
+          나의 페이백 랭킹 이벤트는 BitMEX의 경우 24년 05월 01일부터 최초 진행됩니다.<br />
           누적된 페이백의 보장 기간은 안전한 정보보호를 위해 최대 탈퇴할 때까지 보관됩니다. 거래소에서 지급하는 증정금 및 보너스는 유효한 리워드으로 잡히지 않으<br />
           며, 증점금 및 보너스를 사용하기 전까지는 페이백이 이뤄지지 않습니다. <br />
           당사 혹은 거래소의 사정으로 페이백 조건은 변경될 수 있습니다. <br />
